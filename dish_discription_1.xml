@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/TopPanel"
+        android:layout_width="match_parent"
+        android:layout_height="80dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_marginBottom="2dip"
+                android:background="#41870c"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:padding="2dip"
+                android:text="dish Name"
+                android:textColor="#ffffff"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/backRecipe"
+            android:layout_width="60dip"
+            android:layout_height="80dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_chevron_left_white_36dp" />
+
+        <ImageView
+            android:layout_width="100dip"
+            android:layout_height="80dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ornament" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dip"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:padding="2dip"
+                android:text="date"
+                android:textColor="#ffffff"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:padding="2dip"
+                android:text="time"
+                android:textColor="#ffffff"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/dish" />
+
+        <ImageView
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dip"
+            android:src="@drawable/play_icon" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:background="@color/greenTirlebackground"
+                android:fontFamily="serif-monospace"
+                android:padding="10dip"
+                android:text="@string/ingredients"
+                android:textColor="#FFFFFF"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/ingredientlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#60000000"
+                android:paddingLeft="50dip"
+                android:text="\n
+Semolina - 1/2 cup (100 grams)\n
+Curd - 1/2 cup (whisked)\n
+Oil - 2 tbsp\n
+Green peas - 1/4 cup\n
+Cauliflower - 1/4 cup (finely chopped)\n
+Green chilly 0 1 finely chopped \n
+Ginger - 1/2 piece (1 tsp paste) \n
+Salt - 1/2 taste or as per taste \n
+Mustard seeds - 1/4 tsp \n
+Curry leaves - 7 to 8 (chopped) \n
+Baking soda - 1/4 tsp \n "
+                android:textColor="#FFFFFF"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/procedure_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="2dip"
+                android:background="@color/greenTirlebackground"
+                android:fontFamily="serif-monospace"
+                android:padding="10dip"
+                android:text="@string/procedure_title"
+                android:textColor="#FFFFFF"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/procedure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#60000000"
+                android:padding="15dip"
+                android:text="Take semolina in a big bowl and mix curd to it. Now add chopped cauliflower, peas, chopped green chilly, ginger paste and salt. Mix everything really well. If the batter appears too thick add some water to it.
+            Cover the batter for 10 to 15 minutes to rest. Then use this batter to make appams.
+            Batter is ready, now mix mustard seeds to it. Take a small pan and heat 1 tsp oil in it. When the oil is rightly hot, splatter mustard seeds first. To it then add curry leaves and saute for a while. Now mix this tempering to the batter. In the end add baking soda to the batter."
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15dip" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dip"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <ImageView
+        android:id="@+id/latestrecipeimage"
+        android:layout_width="0dip"
+        android:layout_height="80dip"
+        android:layout_margin="3dip"
+        android:layout_weight="0.5"
+        android:alpha="1"
+        android:background="#60000000"
+        android:paddingBottom="2dip"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:src="@drawable/dish" />
+
+    <TextView
+        android:id="@+id/latestrecipetitle"
+        android:layout_width="0dip"
+        android:layout_height="80dip"
+        android:layout_margin="3dip"
+        android:layout_weight="1.5"
+        android:background="#60000000"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:paddingBottom="2dip"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:text="text"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+</LinearLayout>
