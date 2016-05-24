@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dummylayout"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:id="@+id/searchbox"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/auto_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="0.85"
+            android:background="@drawable/serch_textbox"
+            android:gravity="center"
+            android:hint="Search Recipe"
+            android:text=""
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.15"
+            android:src="@drawable/search_btn" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        style="listViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextprevious"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/searchbox"
+        android:background="@drawable/row_box"
+        android:divider="@drawable/backgroud_gray"
+        android:dividerHeight="2dip" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/nextprevious"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/row_box"
+        android:padding="5dip" >
+
+        <ImageView
+            android:id="@+id/btnRefresh"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/refresh" />
+
+        <ImageView
+            android:id="@+id/btnNextPage"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/next" />
+
+        <ImageView
+            android:id="@+id/btnPreviousPage"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnNextPage"
+            android:src="@drawable/previous" />
+    </RelativeLayout>
+
+</RelativeLayout>
