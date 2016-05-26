@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Material Design</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home4">My Favorites</string>
+    <string name="nav_item_home1">LATEST</string>
+    <!--<string name="nav_item_home">SWEETS</string>-->
+    <!--<string name="nav_item_friends">CURRY-DAL</string>-->
+    <!--<string name="nav_item_notifications">SNACKS</string>-->
+
+    <!--<string name="nav_item_puri_naan">PURI NAAN PARATHA</string>-->
+    <!--<string name="nav_item_baking">BAKING</string>-->
+    <!--<string name="nav_item_rice">RICE</string>-->
+
+    <!--<string name="nav_item_chutiny">CHUTNEY PICKE ETC</string>-->
+    <!--<string name="nav_item_misc">MISC</string>-->
+    <!--<string name="nav_item_regional">REGIONAL</string>-->
+    <string name="nav_item_Visit_NishaMadulika">VISIT NISHAMADULIKA</string>
+    <string name="nav_item_all_cat">ALL CATEGORY</string>
+    <string name="hint_prompt">Speak an item name or number</string>
+    <string name="search_hint">Search&#8230;</string>
+
+
+
+
+
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home4</item>
+        <item>@string/nav_item_home1</item>
+
+        <!--<item>@string/nav_item_friends</item>-->
+        <!--<item>@string/nav_item_notifications</item>-->
+       <!--<item>@string/nav_item_puri_naan</item>-->
+        <!--<item>@string/nav_item_baking</item>-->
+        <!--<item>@string/nav_item_rice</item>-->
+        <!--<item>@string/nav_item_chutiny</item>-->
+        <!--<item>@string/nav_item_misc</item>-->
+        <!--<item>@string/nav_item_regional</item>-->
+        <item>@string/nav_item_Visit_NishaMadulika</item>
+        <item>@string/nav_item_all_cat</item>
+    </string-array>
+    <string name="title_messages">NishaMadhulika</string>
+    <string name="title_friends">NishaMadhulika</string>
+    <string name="title_latest">NishaMadhulika</string>
+    <string name="title_home">NishaMadhulika</string>
+
+    <string name="title_puri_naan">NishaMadhulika</string>
+    <string name="title_baking">NishaMadhulika</string>
+    <string name="title_rice">NishaMadhulika</string>
+
+    <string name="title_chutiny">NishaMadhulika</string>
+    <string name="title_misc">NishaMadhulika</string>
+    <string name="title_regional">NishaMadhulika</string>
+    <string name="title_Visit_NishaMadulika">NishaMadhulika</string>
+</resources>
