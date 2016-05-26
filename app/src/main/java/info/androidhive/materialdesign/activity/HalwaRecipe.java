@@ -24,7 +24,7 @@ public class HalwaRecipe extends Activity {
             "Strawberry Halwa Recipe" ,
             "Millet Flour Halwa - Bajra nu Halwa",
             "Shahi Tukra Recipe - How To Make Shahi Tukda",
-           "Khas Khas ka Halwa recipe in Hindi",
+            "Khas Khas ka Halwa recipe in Hindi",
             "Besan Halwa Recipe"
 
 

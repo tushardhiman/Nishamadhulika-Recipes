@@ -1,34 +1,33 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#800000"
+
     tools:context=".activity.Sweets">
 
     <LinearLayout
-        android:background="@color/white"
+
         android:layout_width="match_parent"
+        android:background="@drawable/blur"
         android:layout_height="0.5dp"/>
     <TextView
         android:id="@+id/label"
         android:textSize="15sp"
         android:textColor="#fff"
-        android:background="@color/colorAccent"
+
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:text="SWEETS"
         android:textStyle="bold"/>
-    <LinearLayout
-        android:background="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"/>
+
    <GridView
        android:id="@+id/grid_sweet"
-       android:layout_marginTop="30dp"
+       android:background="@drawable/blur"
+
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:numColumns="3"/>
 
-</RelativeLayout>
+</LinearLayout>

@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
         drawerFragment.setUp(R.id.fragment_navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout), mToolbar);
         drawerFragment.setDrawerListener(this);
-        displayView(1);
+        displayView(0);
 //        SearchAdapter adapter = new SearchAdapter();
 //        searchView.setAdapter(adapter);
 
@@ -136,11 +136,12 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         String title = getString(R.string.app_name);
         switch (position) {
             case 0:
+
                 fragment = new MyFavoites();
                 title = getString(R.string.title_friends);
                 break;
             case 1:
-                fragment = new Latest();
+                fragment = new MyFavoites();
                 title = getString(R.string.title_friends);
                 break;
             case 2:
@@ -148,46 +149,46 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
                 title = getString(R.string.title_friends);
                 break;
 
-//            case 2:
-//                fragment = new CurryDal();
-//                title = getString(R.string.title_home);
-//                break;
-//            case 3:
-//                fragment = new Snacks();
-//                title = getString(R.string.title_messages);
-//                break;
-//
-//            case 4:
-//                fragment = new Puri_paan();
-//                title = getString(R.string.title_puri_naan);
-//                break;
-//            case 5:
-//                fragment = new Baking();
-//                title = getString(R.string.title_baking);
-//                break;
-//            case 6:
-//                fragment = new Rice();
-//                title = getString(R.string.title_rice);
-//                break;
-//
-//            case 7:
-//                fragment = new Chutney_Picke();
-//                title = getString(R.string.title_chutiny);
-//                break;
-//            case 8:
-//                fragment = new Misc();
-//                title = getString(R.string.title_misc);
-//                break;
-//            case 9:
-//                fragment = new Reginol();
-//                title = getString(R.string.title_regional);
-//                break;
             case 3:
+                fragment = new CurryDal();
+                title = getString(R.string.title_home);
+                break;
+            case 4:
+                fragment = new Snacks();
+                title = getString(R.string.title_messages);
+                break;
+
+            case 5:
+                fragment = new Puri_paan();
+                title = getString(R.string.title_puri_naan);
+                break;
+            case 6:
+                fragment = new Baking();
+                title = getString(R.string.title_baking);
+                break;
+            case 7:
+                fragment = new Rice();
+                title = getString(R.string.title_rice);
+                break;
+
+            case 8:
+                fragment = new Chutney_Picke();
+                title = getString(R.string.title_chutiny);
+                break;
+            case 9:
+                fragment = new Misc();
+                title = getString(R.string.title_misc);
+                break;
+            case 10:
+                fragment = new Reginol();
+                title = getString(R.string.title_regional);
+                break;
+            case 11:
                 fragment = new VisitNishaMadulika();
                 title = getString(R.string.title_Visit_NishaMadulika);
 
                 break;
-            case 4:
+            case 12:
                 fragment = new AllCategory();
                 title = getString(R.string.title_Visit_NishaMadulika);
 

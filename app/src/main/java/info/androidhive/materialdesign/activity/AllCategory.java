@@ -1,11 +1,9 @@
 package info.androidhive.materialdesign.activity;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
@@ -18,7 +16,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -37,7 +34,6 @@ import info.androidhive.materialdesign.DataBase.DatabaseHelper;
 import info.androidhive.materialdesign.ParserJson.JSONParser;
 import info.androidhive.materialdesign.R;
 import info.androidhive.materialdesign.Utils.StringFunctions;
-import info.androidhive.materialdesign.adapter.Custom_Latestlist_Adapter;
 import info.androidhive.materialdesign.adapter.RecipeListAdapter;
 import info.androidhive.materialdesign.adapter.RecipeSubCatListAdapter;
 
