@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -23,11 +24,11 @@ import info.androidhive.materialdesign.adapter.CustomAdapter;
 public class CurryDal extends Fragment {
 
 
-    GridView gv;
+    ListView gv;
     Context context;
     ArrayList prgmName;
-    public static String [] prgmNameList={"All Catagories","Halwa Recipe","Ladoo Recipe","Burfi Recipe","Kheer Recipe","Peda Recipe","Chikki Recipe","Bengali Chhena Recipe","Traditional Sweet"};
-    public static int [] prgmImages={R.drawable.t,R.drawable.i,R.drawable.m,R.drawable.t,R.drawable.u,R.drawable.s,R.drawable.i,R.drawable.t,R.drawable.u};
+    public static String [] prgmNameList={"Curry-Taridar Sabzi","Vegetables-Fry","Dal Recipe","Kadhi Recipe","Stuffed Vegetable Recipe","Kofta Recipe","Saag Recipe"};
+    public static int [] prgmImages={R.drawable.t,R.drawable.i,R.drawable.m,R.drawable.t,R.drawable.u,R.drawable.s,R.drawable.i};
 
     public CurryDal() {
         // Required empty public constructor
@@ -42,8 +43,8 @@ public class CurryDal extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_curry_dal, container, false);
-        gv=(GridView)rootView.findViewById(R.id.grid_sweet);
+        View rootView = inflater.inflate(R.layout.curry_dal_list_layout, container, false);
+        gv=(ListView) rootView.findViewById(R.id.latestrecipeslist);
         gv.setAdapter(new CustomAdapter((MainActivity) getActivity(), prgmNameList,prgmImages));
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,

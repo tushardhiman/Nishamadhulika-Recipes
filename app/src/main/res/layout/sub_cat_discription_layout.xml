@@ -11,6 +11,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:background="@drawable/login_back"
         android:orientation="vertical">
         <include
             android:id="@+id/toolbar"
@@ -64,14 +65,15 @@
         android:textSize="@android:dimen/app_icon_size"
         android:textColor="@android:color/white"
         android:text="ingredients"
-        android:background="#800000"/>
+      />
 
     <TextView android:layout_height="250dip"
         android:layout_width="match_parent"
         android:id="@+id/ingredientlist"
         android:textSize="15dip"
         android:textColor="@android:color/white"
-        android:text="\n Semolina - 1/2 cup (100 grams)\n Curd - 1/2 cup (whisked)\n Oil - 2 tbsp\n Green peas - 1/4 cup\n Cauliflower - 1/4 cup (finely chopped)\n Green chilly 0 1 finely chopped \n Ginger - 1/2 piece (1 tsp paste) \n Salt - 1/2 taste or as per taste \n Mustard seeds - 1/4 tsp \n Curry leaves - 7 to 8 (chopped) \n Baking soda - 1/4 tsp \n " android:background="#800000" android:paddingLeft="50dip"/>
+        android:text="\n Semolina - 1/2 cup (100 grams)\n Curd - 1/2 cup (whisked)\n Oil - 2 tbsp\n Green peas - 1/4 cup\n Cauliflower - 1/4 cup (finely chopped)\n Green chilly 0 1 finely chopped \n Ginger - 1/2 piece (1 tsp paste) \n Salt - 1/2 taste or as per taste \n Mustard seeds - 1/4 tsp \n Curry leaves - 7 to 8 (chopped) \n Baking soda - 1/4 tsp \n "
+        android:paddingLeft="50dip"/>
 
     <TextView
         android:layout_height="50dip"
@@ -82,10 +84,15 @@
         android:textSize="@android:dimen/app_icon_size"
         android:textColor="@android:color/white"
         android:text="procedure_title"
-        android:background="#800000"
+
         android:layout_marginTop="2dip"/>
 
-    <TextView android:layout_height="250dip" android:layout_width="match_parent" android:id="@+id/procedure" android:textSize="15dip" android:textColor="@android:color/white" android:text="Take semolina in a big bowl and mix curd to it. Now add chopped cauliflower, peas, chopped green chilly, ginger paste and salt. Mix everything really well. If the batter appears too thick add some water to it. Cover the batter for 10 to 15 minutes to rest. Then use this batter to make appams. Batter is ready, now mix mustard seeds to it. Take a small pan and heat 1 tsp oil in it. When the oil is rightly hot, splatter mustard seeds first. To it then add curry leaves and saute for a while. Now mix this tempering to the batter. In the end add baking soda to the batter." android:background="#800000" android:textAlignment="center" android:padding="15dip"/>
+    <TextView android:layout_height="250dip"
+        android:layout_width="match_parent" android:id="@+id/procedure" android:textSize="15dip"
+        android:textColor="@android:color/white"
+        android:text="Take semolina in a big bowl and mix curd to it. Now add chopped cauliflower, peas, chopped green chilly, ginger paste and salt. Mix everything really well. If the batter appears too thick add some water to it. Cover the batter for 10 to 15 minutes to rest. Then use this batter to make appams. Batter is ready, now mix mustard seeds to it. Take a small pan and heat 1 tsp oil in it. When the oil is rightly hot, splatter mustard seeds first. To it then add curry leaves and saute for a while. Now mix this tempering to the batter. In the end add baking soda to the batter."
+        android:textAlignment="center"
+        android:padding="15dip"/>
 
 </LinearLayout>
 

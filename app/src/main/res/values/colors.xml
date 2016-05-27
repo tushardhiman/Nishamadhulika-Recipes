@@ -7,4 +7,12 @@
     <color name="navigationBarColor">#374E23</color>
     <color name="colorAccent">#374E23</color>
     <color name="white">#ffffff</color>
+
+    <!--EnemSML2-->
+    <color name="greenTirlebackground">#41850c</color>
+    <color name="greenSubmit">#41870c</color>
+    <color name="greenSelected">#73a012</color>
+
+    <color name="tabIndicator">#73A012</color>
+    <color name="red">#41870c</color>
 </resources>

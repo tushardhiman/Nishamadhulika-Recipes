@@ -10,27 +10,25 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import info.androidhive.materialdesign.R;
-import info.androidhive.materialdesign.activity.MainActivity;
+import info.androidhive.materialdesign.activity.HalwaRecipe;
+
 
 /**
- * Created by Dell on 5/17/2016.
+ * Created by Dell on 5/27/2016.
  */
-public class CustomAdapter extends BaseAdapter{
-
+public class TusharAdapter extends BaseAdapter {
     String [] result;
     Context context;
     int [] imageId;
     private static LayoutInflater inflater=null;
-    public CustomAdapter(MainActivity mainActivity, String[] prgmNameList, int[] prgmImages) {
+    public TusharAdapter(HalwaRecipe mainActivity, String[] prgmNameList, int[] prgmImages) {
         // TODO Auto-generated constructor stub
         result=prgmNameList;
         context=mainActivity;
         imageId=prgmImages;
         inflater = ( LayoutInflater )context.
                 getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
     }
-
     @Override
     public int getCount() {
         // TODO Auto-generated method stub
@@ -59,23 +57,19 @@ public class CustomAdapter extends BaseAdapter{
         // TODO Auto-generated method stub
         Holder holder=new Holder();
         View rowView;
-
         rowView = inflater.inflate(R.layout.latest_list_item_1, null);
-        holder.tv=(TextView)rowView.findViewById(R.id.latestrecipetitle);
-        holder.img=(ImageView)rowView.findViewById(R.id.latestrecipeimage);
-
+        holder.tv=(TextView) rowView.findViewById(R.id.latestrecipetitle);
+        holder.img=(ImageView) rowView.findViewById(R.id.latestrecipeimage);
         holder.tv.setText(result[position]);
         holder.img.setImageResource(imageId[position]);
-
 //        rowView.setOnClickListener(new View.OnClickListener() {
-//
 //            @Override
 //            public void onClick(View v) {
 //                // TODO Auto-generated method stub
 //                Toast.makeText(context, "You Clicked "+result[position], Toast.LENGTH_LONG).show();
 //            }
 //        });
-
         return rowView;
     }
+
 }

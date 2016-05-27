@@ -17,13 +17,13 @@ public class CustomList extends ArrayAdapter<String> {
 
     private final Activity context;
     private final String[] web;
-    private final Integer[] imageId;
+  //  private final Integer[] imageId;
     public CustomList(Activity context,
-                      String[] web, Integer[] imageId) {
+                      String[] web, int[] imageId) {
         super(context, R.layout.list_single, web);
         this.context = context;
         this.web = web;
-        this.imageId = imageId;
+       // this.imageId = imageId;
 
     }
     @Override
@@ -35,7 +35,7 @@ public class CustomList extends ArrayAdapter<String> {
         ImageView imageView = (ImageView) rowView.findViewById(R.id.img);
         txtTitle.setText(web[position]);
 
-        imageView.setImageResource(imageId[position]);
+        //imageView.setImageResource(imageId[position]);
         return rowView;
     }
 }

@@ -11,9 +11,9 @@ import info.androidhive.materialdesign.R;
 /**
  * Created by Dell on 5/24/2016.
  */
-public class FourFragment extends Fragment {
+public class My_Fav_Fragment extends Fragment {
 
-    public FourFragment() {
+    public My_Fav_Fragment() {
         // Required empty public constructor
     }
 

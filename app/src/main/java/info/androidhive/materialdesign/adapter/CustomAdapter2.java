@@ -9,7 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
+import info.androidhive.materialdesign.Bean.ReceipSub_data;
 import info.androidhive.materialdesign.R;
+import info.androidhive.materialdesign.activity.HalwaRec_2;
 import info.androidhive.materialdesign.activity.MainActivity;
 
 /**
@@ -28,6 +32,10 @@ public class CustomAdapter2 extends BaseAdapter{
         imageId=prgmImages;
         inflater = ( LayoutInflater )context.
                 getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+    }
+
+    public CustomAdapter2(HalwaRec_2 halwaRec_2, int latest_list_item_1, ArrayList<ReceipSub_data> arraylist_results) {
 
     }
 

@@ -2,8 +2,6 @@ package info.androidhive.materialdesign.activity;
 
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -17,18 +15,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import info.androidhive.materialdesign.R;
+import info.androidhive.materialdesign.fragments.LatestRecipes;
 
 public class MainActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
 
@@ -137,62 +134,66 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         switch (position) {
             case 0:
 
-                fragment = new MyFavoites();
+                fragment = new Home();
                 title = getString(R.string.title_friends);
                 break;
             case 1:
-                fragment = new MyFavoites();
+                fragment = new LatestRecipes();
                 title = getString(R.string.title_friends);
                 break;
             case 2:
-                fragment = new Sweets();
+                fragment = new HalwaRec_2();
+                title = getString(R.string.title_friends);
+                break;
+            case 3:
+                fragment = new Test();
                 title = getString(R.string.title_friends);
                 break;
 
-            case 3:
+            case 4:
                 fragment = new CurryDal();
                 title = getString(R.string.title_home);
                 break;
-            case 4:
+            case 5:
                 fragment = new Snacks();
                 title = getString(R.string.title_messages);
                 break;
 
-            case 5:
+            case 6:
                 fragment = new Puri_paan();
                 title = getString(R.string.title_puri_naan);
                 break;
-            case 6:
+            case 7:
                 fragment = new Baking();
                 title = getString(R.string.title_baking);
                 break;
-            case 7:
+            case 8:
                 fragment = new Rice();
                 title = getString(R.string.title_rice);
                 break;
 
-            case 8:
+            case 9:
                 fragment = new Chutney_Picke();
                 title = getString(R.string.title_chutiny);
                 break;
-            case 9:
+            case 10:
                 fragment = new Misc();
                 title = getString(R.string.title_misc);
                 break;
-            case 10:
+            case 11:
                 fragment = new Reginol();
                 title = getString(R.string.title_regional);
                 break;
-            case 11:
-                fragment = new VisitNishaMadulika();
-                title = getString(R.string.title_Visit_NishaMadulika);
-
-                break;
-            case 12:
-                fragment = new AllCategory();
-                title = getString(R.string.title_Visit_NishaMadulika);
-
-                break;
+//            case 11:
+//                fragment = new VisitNishaMadulika();
+//                title = getString(R.string.title_Visit_NishaMadulika);
+//
+//                break;
+//            case 12:
+//                fragment = new AllCategory();
+//                title = getString(R.string.title_Visit_NishaMadulika);
+//
+//                break;
             default:
                 break;
         }

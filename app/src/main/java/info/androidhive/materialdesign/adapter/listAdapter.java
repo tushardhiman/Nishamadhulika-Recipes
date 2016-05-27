@@ -7,21 +7,20 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import info.androidhive.materialdesign.R;
 import info.androidhive.materialdesign.activity.MainActivity;
 
 /**
- * Created by Dell on 5/17/2016.
+ * Created by Dell on 5/26/2016.
  */
-public class CustomAdapter extends BaseAdapter{
+public class listAdapter extends BaseAdapter {
 
     String [] result;
     Context context;
     int [] imageId;
     private static LayoutInflater inflater=null;
-    public CustomAdapter(MainActivity mainActivity, String[] prgmNameList, int[] prgmImages) {
+    public listAdapter(MainActivity mainActivity, String[] prgmNameList, int[] prgmImages) {
         // TODO Auto-generated constructor stub
         result=prgmNameList;
         context=mainActivity;
@@ -60,9 +59,9 @@ public class CustomAdapter extends BaseAdapter{
         Holder holder=new Holder();
         View rowView;
 
-        rowView = inflater.inflate(R.layout.latest_list_item_1, null);
-        holder.tv=(TextView)rowView.findViewById(R.id.latestrecipetitle);
-        holder.img=(ImageView)rowView.findViewById(R.id.latestrecipeimage);
+        rowView = inflater.inflate(R.layout.list_single, null);
+        holder.tv=(TextView)rowView.findViewById(R.id.sweet_text);
+        holder.img=(ImageView)rowView.findViewById(R.id.image_sweet);
 
         holder.tv.setText(result[position]);
         holder.img.setImageResource(imageId[position]);

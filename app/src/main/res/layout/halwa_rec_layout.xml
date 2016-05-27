@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:text=""
+    android:textSize="20dip"
+    android:background="#41870c"
+    android:fontFamily="serif-monospace"
+    android:gravity="center"
+    android:padding="2dip"
+    android:layout_marginBottom="2dip"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/latestrecipeslist"
+        android:background="@drawable/blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
