@@ -71,12 +71,12 @@ public class MyFavoites extends Fragment {
         adapter.addFrag(new Sweets(), "Appam Recipe");
         adapter.addFrag(new TwoFragment(), "Baati Recipe");
         adapter.addFrag(new ThreeFragment(), "Baking Recipe");
-        adapter.addFrag(new FourFragment(), "Bengali Recipe");
+       // adapter.addFrag(new FourFragment(), "Bengali Recipe");
 
         adapter.addFrag(new OneFragment(), "Bengali sweets");
         adapter.addFrag(new TwoFragment(), "Bihari Recipe");
         adapter.addFrag(new ThreeFragment(), "Biryani Recipe");
-        adapter.addFrag(new FourFragment(), "Bonda Recipe");
+      //  adapter.addFrag(new FourFragment(), "Bonda Recipe");
 
 
         viewPager.setAdapter(adapter);
